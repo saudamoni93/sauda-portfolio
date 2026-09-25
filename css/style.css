@@ -285,33 +285,91 @@ p {
 
 
 /* =========================
-   SERVICES
+   SERVICES SECTION
 ========================= */
 
 #services {
+    max-width: none;
     background: #0e0e15;
+    padding: 110px 30px;
 }
 
-#services>div {
-    display: inline-block;
-    vertical-align: top;
-    width: 46%;
-    margin: 10px 1%;
-    padding: 30px;
+.services-header {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+
+.services-header h2 {
+    max-width: 700px;
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.services-header h2 span {
+    color: #9b7cff;
+}
+
+.services-intro {
+    max-width: 650px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.services-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    position: relative;
+    padding: 35px;
     background: #15151e;
     border: 1px solid #252532;
-    border-radius: 12px;
-    transition: 0.3s;
+    border-radius: 14px;
+    transition: all 0.3s ease;
 }
 
-#services>div:hover {
-    transform: translateY(-5px);
+.service-card:hover {
+    transform: translateY(-6px);
     border-color: #6d4aff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
-#services h3 {
-    font-size: 23px;
-    margin-bottom: 12px;
+.service-number {
+    display: block;
+    color: #6d4aff;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.service-card h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.service-card>p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.service-tags span {
+    padding: 6px 10px;
+    background: #20202b;
+    color: #aaaab8;
+    font-size: 12px;
+    border-radius: 5px;
 }
 
 
@@ -383,10 +441,6 @@ footer {
     h2 {
         font-size: 34px;
     }
-    #services>div {
-        width: 100%;
-        margin: 10px 0;
-    }
     #stats {
         padding: 20px;
     }
@@ -408,5 +462,17 @@ footer {
     }
     .about-content p {
         font-size: 16px;
+    }
+    #services {
+        padding: 80px 20px;
+    }
+    .services-header h2 {
+        font-size: 40px;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    .service-card {
+        padding: 28px;
     }
 }
