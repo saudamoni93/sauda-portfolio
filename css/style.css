@@ -1,0 +1,241 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 15, 0.9);
+    border-bottom: 1px solid #22222c;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav div {
+    display: flex;
+    gap: 30px;
+}
+
+nav div a {
+    color: #b8b8c5;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav div a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 30px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+p {
+    color: #b8b8c5;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+#hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+#hero>p:first-child {
+    color: #9b7cff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+#hero h1 {
+    max-width: 900px;
+    font-size: 68px;
+    margin-bottom: 30px;
+}
+
+#hero p {
+    max-width: 700px;
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+#hero a,
+#contact a {
+    display: inline-block;
+    padding: 14px 24px;
+    margin-right: 10px;
+    color: #ffffff;
+    background: #6d4aff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#hero a:hover,
+#contact a:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+#services {
+    background: #0e0e15;
+}
+
+#services>div {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    margin: 10px 1%;
+    padding: 30px;
+    background: #15151e;
+    border: 1px solid #252532;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+#services>div:hover {
+    transform: translateY(-5px);
+    border-color: #6d4aff;
+}
+
+#services h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   WORK
+========================= */
+
+#work {
+    text-align: center;
+}
+
+#work p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #22222c;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+    nav {
+        padding: 18px 20px;
+    }
+    nav div {
+        gap: 12px;
+    }
+    nav div a {
+        font-size: 13px;
+    }
+    section {
+        padding: 70px 20px;
+    }
+    #hero h1 {
+        font-size: 42px;
+    }
+    #hero p {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 34px;
+    }
+    #services>div {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
