@@ -91,51 +91,90 @@ p {
 
 
 /* =========================
-   HERO
+   HERO SECTION
 ========================= */
 
 #hero {
     min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     max-width: 1200px;
+    margin: auto;
+    padding: 120px 30px;
+    display: flex;
+    align-items: center;
 }
 
-#hero>p:first-child {
+.hero-content {
+    max-width: 950px;
+}
+
+.hero-label {
     color: #9b7cff;
     font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
 }
 
-#hero h1 {
-    max-width: 900px;
+.hero-content h1 {
     font-size: 68px;
+    line-height: 1.08;
+    letter-spacing: -2px;
     margin-bottom: 30px;
-}
-
-#hero p {
-    max-width: 700px;
-    font-size: 19px;
-    margin-bottom: 35px;
-}
-
-#hero a,
-#contact a {
-    display: inline-block;
-    padding: 14px 24px;
-    margin-right: 10px;
     color: #ffffff;
-    background: #6d4aff;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 0.3s;
 }
 
-#hero a:hover,
-#contact a:hover {
+.hero-content h1 span {
+    color: #9b7cff;
+}
+
+.hero-description {
+    max-width: 720px;
+    color: #b8b8c5;
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons a,
+#contact a {
+    text-decoration: none;
+    padding: 15px 26px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #6d4aff;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #353542;
+}
+
+.btn-secondary:hover {
+    border-color: #9b7cff;
     transform: translateY(-3px);
 }
 
@@ -225,10 +264,15 @@ footer {
     section {
         padding: 70px 20px;
     }
-    #hero h1 {
-        font-size: 42px;
+    #hero {
+        min-height: 80vh;
+        padding: 90px 20px;
     }
-    #hero p {
+    .hero-content h1 {
+        font-size: 42px;
+        letter-spacing: -1px;
+    }
+    .hero-description {
         font-size: 16px;
     }
     h2 {
