@@ -224,6 +224,67 @@ p {
 
 
 /* =========================
+   ABOUT SECTION
+========================= */
+
+#about {
+    background: #0a0a0f;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.section-label {
+    color: #9b7cff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.about-heading h2 {
+    font-size: 52px;
+    line-height: 1.1;
+}
+
+.about-heading h2 span {
+    color: #9b7cff;
+}
+
+.about-content {
+    max-width: 650px;
+}
+
+.about-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 24px;
+    color: #ffffff;
+    border: 1px solid #353542;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-button:hover {
+    border-color: #9b7cff;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
    SERVICES
 ========================= */
 
@@ -337,5 +398,15 @@ footer {
     }
     .stat-item h3 {
         font-size: 28px;
+    }
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    .about-heading h2 {
+        font-size: 40px;
+    }
+    .about-content p {
+        font-size: 16px;
     }
 }
