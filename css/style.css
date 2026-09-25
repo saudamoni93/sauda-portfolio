@@ -180,6 +180,50 @@ p {
 
 
 /* =========================
+   SOCIAL PROOF / STATS
+========================= */
+
+#stats {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    border-top: 1px solid #22222c;
+    border-bottom: 1px solid #22222c;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-item {
+    padding: 25px;
+    text-align: center;
+    background: #101018;
+    border: 1px solid #22222c;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    border-color: #6d4aff;
+}
+
+.stat-item h3 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.stat-item p {
+    font-size: 14px;
+    color: #9999a8;
+}
+
+
+/* =========================
    SERVICES
 ========================= */
 
@@ -281,5 +325,17 @@ footer {
     #services>div {
         width: 100%;
         margin: 10px 0;
+    }
+    #stats {
+        padding: 20px;
+    }
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .stat-item {
+        padding: 20px 10px;
+    }
+    .stat-item h3 {
+        font-size: 28px;
     }
 }
