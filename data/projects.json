@@ -1,0 +1,23 @@
+[{
+        "title": "GamsGo Promotional Campaign",
+        "category": "X / SOCIAL MEDIA",
+        "description": "Sponsored X campaign for GamsGo with original copy and creative, published on @sauda_coder.",
+        "image": "assets/images/gamsgo.jpg",
+        "link": "https://x.com/sauda_coder/status/2098100687213318219"
+    },
+    {
+        "title": "Graphic Design & Creative Production",
+        "category": "DESIGN",
+        "description": "Promotional visuals created by me for a paid client and published on the client's X account.",
+        "image": "assets/images/graphic-design.jpg",
+        "link": "https://x.com/_evon3929/status/2078546000650829896"
+    },
+    {
+        "title": "Short-Form Product Video",
+        "category": "VIDEO • CREATIVE",
+        "description": "Promotional short-form videos created for Dokie AI, combining visual storytelling, video editing and product-focused messaging.",
+        "image": "assets/images/video-project.jpg",
+        "link": "https://x.com/sauda_coder/status/2080634752110096445",
+        "video": true
+    }
+]
