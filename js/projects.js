@@ -15,11 +15,16 @@ fetch("data/projects.json")
 
             let imageHTML = `
                 <div class="project-image">
-                    <img 
-                        src="${project.image}" 
+                    <img
+                        src="${project.image}"
                         alt="${project.title}"
+                        loading="lazy"
+                        onerror="this.style.display='none'; this.parentElement.classList.add('image-fallback');"
                     >
-                    ${project.video ? '<span class="play-badge" aria-hidden="true">▶</span>' : ''}
+                    <span class="image-fallback-text" aria-hidden="true">
+                        Project Preview
+                    </span>
+                    ${project.video ? '<span class="play-badge" aria-hidden="true">▶</span>' : ""}
                 </div>
             `;
 

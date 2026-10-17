@@ -547,3 +547,37 @@ footer {
     outline: 2px solid #9b7cff;
     outline-offset: 4px;
 }
+
+
+/* Step 22: Image Loading & Fallback */
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    background: #151521;
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-fallback-text {
+    display: none;
+    min-height: 180px;
+    align-items: center;
+    justify-content: center;
+    color: #b8b8c5;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #151521, #21183b);
+}
+
+.project-image.image-fallback .image-fallback-text {
+    display: flex;
+}
+
+.project-image.image-fallback img {
+    display: none;
+}
