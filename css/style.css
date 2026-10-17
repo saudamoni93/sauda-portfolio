@@ -581,3 +581,73 @@ footer {
 .project-image.image-fallback img {
     display: none;
 }
+
+
+/* Step 23: Mobile Responsive Design */
+
+
+/* Tablet screens */
+
+@media (max-width: 1024px) {
+    .work-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* Mobile screens */
+
+@media (max-width: 768px) {
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-filters {
+        gap: 8px;
+    }
+    .filter-btn {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+    .hero,
+    .about,
+    .services,
+    #work,
+    .contact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+    .project-card {
+        width: 100%;
+        min-width: 0;
+    }
+    .project-info h3 {
+        font-size: 19px;
+    }
+    .project-info p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+
+/* Small mobile screens */
+
+@media (max-width: 480px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+    .project-filters {
+        justify-content: flex-start;
+    }
+    .filter-btn {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
